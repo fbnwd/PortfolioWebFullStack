@@ -1,0 +1,146 @@
+<!--<div class="container">
+  <div class="exp">
+      <div id="experience">
+          <div class="card-titles">
+              <h2>Experiencia laboral</h2>
+              <div class="btn-edit">
+                  <a href="#" class="btn-right"><i class="fa fa-pen"></i></a>
+              </div>
+          </div>
+          <div>
+              <ul class="items-list">
+                  <li *ngFor="let experiencia of experienciaList">
+                      <div class="data-container">
+                          <a href="#">
+                              <div class="logo-image-container">
+                                  <img class="logo-image" [src]="experiencia.img" width="5%" height="5%" alt="Logotipo ORT" />
+                              </div>
+                              <div class="list-info">
+                                  <div>
+                                      <h3>{{experiencia.position}}</h3>
+                                      <p>{{experiencia.company}}</p>
+                                      <p>{{experiencia.mode}}</p>
+                                      <p><time>{{experiencia.start}}</time> - <time>{{experiencia.end}}</time></p>
+                                      <p>{{experiencia.timElapsed}}</p>
+                                      <p>{{experiencia.location}}</p>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="data-control">
+                          <div class="btn-edit">
+                              <a href="#" class="btn-right"><i class="fa fa-pen"></i></a>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </div>
+</div>-->
+
+<div class="exp-container">
+    <div class="exp">
+        <div id="experience">
+            <div class="card-titles">
+                <h2 class="titular">Experiencia laboral</h2>
+                <div class="icons_container">
+                    <img src="../assets/img/logoAdd1.svg" alt="Agregar">
+                    <img src="../assets/img/logoEdit1.svg" alt="Editar">
+                    <img src="../assets/img/logoDel1.svg" alt="Eliminar">
+                </div> 
+
+                <div class="logos">
+                    <img src="../assets/img/logoDG.svg" width="10%" height="10%" alt="UTN FRC">
+                  </div>
+                
+                <div class="txt_container">                   
+                    <p class="txt-tit">Diseñador gráfico y web freelance.</p>
+                    <p>2012 Actualidad</p>  
+                </div>  
+                
+                <h2 class="titular">Opiniones de clientes</h2>
+                   <div class="icons_container">
+                        <img src="../assets/img/logoAdd1.svg" alt="Agregar">
+                        <img src="../assets/img/logoEdit1.svg" alt="Editar">
+                        <img src="../assets/img/logoDel1.svg" alt="Eliminar">
+                    </div> 
+                    <div class="img-wapp">
+                        <img src="../assets/img/fotos/op1.jpg" width="25%" height="25%" alt="Opinión 1">
+                        <img src="../assets/img/fotos/op2.jpg" width="25%" height="25%" alt="Opinión 2">
+                        <img src="../assets/img/fotos/op3.jpg" width="25%" height="25%" alt="Opinión 3">
+                        <img src="../assets/img/fotos/op4.jpg" width="25%" height="25%" alt="Opinión 4">
+                        <img src="../assets/img/fotos/op5.jpg" width="25%" height="25%" alt="Opinión 5">
+                        <img src="../assets/img/fotos/op6.jpg" width="25%" height="25%" alt="Opinión 6">
+                        <img src="../assets/img/fotos/op7.jpg" width="25%" height="25%" alt="Opinión 7">
+                        <img src="../assets/img/fotos/op8.jpg" width="25%" height="25%" alt="Opinión 8">
+                    </div>
+
+                    <div class="icons_container">
+                        <img src="../assets/img/logoAdd1.svg" alt="Agregar">
+                        <img src="../assets/img/logoEdit1.svg" alt="Editar">
+                        <img src="../assets/img/logoDel1.svg" alt="Eliminar">
+                    </div> 
+
+                    <div class="audios">
+                        <a href="#">Audio 1</a>
+                        <a href="#">Audio 2</a>
+                        <a href="#">Audio 3</a>
+                        <a href="#">Audio 4</a>
+                        <a href="#">Audio 5</a>
+                        <a href="#">Audio 6</a>
+                        <a href="#">Audio 7</a>
+                        <a href="#">Audio 8</a>
+                    </div>
+
+                <div class="icons_container">
+                    <img src="../assets/img/logoAdd1.svg" alt="Agregar">
+                    <img src="../assets/img/logoEdit1.svg" alt="Editar">
+                    <img src="../assets/img/logoDel1.svg" alt="Eliminar">
+                </div>
+                
+                <div class="logos">
+                    <img src="../assets/img/logoBPHW.svg" width="10%" height="10%" alt="UTN FRC">
+                </div>               
+
+                <div class="txt_container">
+                    <p class="txt-tit">Biblioteca popular Hugo Wast.</p>
+                    <p>Instructor informático de Office 2000, diseño gráfico y web.</p>
+                    <p>2008 2012</p>
+                </div>
+
+                <div class="icons_container">
+                     <img src="../assets/img/logoAdd1.svg" alt="Agregar">
+                    <img src="../assets/img/logoEdit1.svg" alt="Editar">
+                    <img src="../assets/img/logoDel1.svg" alt="Eliminar">
+                </div>
+
+                <div class="logos">
+                    <img src="../assets/img/logoIsada.svg" width="10%" height="10%" alt="UTN FRC">
+                  </div>
+
+                <div class="txt_container">
+                    <p class="txt-tit">Instituto I.S.A.D.A. Bachillerato acelerado para adultos.</p>
+                    <p>Profesor de Informática.</p>
+                    <p>2006 2008</p>
+                </div>
+
+                <div class="icons_container">
+                    <img src="../assets/img/logoAdd1.svg" alt="Agregar">
+                    <img src="../assets/img/logoEdit1.svg" alt="Editar">
+                    <img src="../assets/img/logoDel1.svg" alt="Eliminar">
+                </div>
+
+                <div class="logos">
+                    <img src="../assets/img/logoBPBV.svg" width="10%" height="10%" alt="UTN FRC">
+                </div>                                
+
+                <div class="txt_container">
+                    <p class="txt-tit">Fundación Pedro Milesi. Biblioteca popular Bella Vista.</p>
+                    <p>Instructor informático de Office XP, diseño gráfico y web.</p>
+                    <p>1999 2006</p>
+                </div>                    
+            </div>
+        </div>
+    </div>  
+</div>
