@@ -1,0 +1,332 @@
+
+use miportfolio;
+alter table dura
+add url_imagen varchar(100) not null
+
+use miportfolio;
+alter table blanda
+add url_imagen varchar(100) not null
+
+use miportfolio;
+alter table habilidad
+drop dura
+
+use miportfolio;
+alter table habilidad
+drop blanda
+
+use miportfolio;
+alter table habilidad
+drop img
+
+use miportfolio;
+alter table habilidad
+drop edicion
+
+use miportfolio;
+alter table habilidad 
+drop column titulo 
+
+use miportfolio;
+alter table habilidad 
+add column habilidad varchar(45)
+
+use miportfolio;
+alter table habilidad 
+add column id_persona int not null
+
+ALTER TABLE `miportfolio`.`blanda` 
+ADD CONSTRAINT `id_habilidad`
+  FOREIGN KEY (`id_blanda`)
+  REFERENCES `miportfolio`.`habilidad` (`id_habilidad`)
+
+use miportfolio;
+alter table dura
+drop column id_habilidad
+
+ALTER TABLE `miportfolio`.`habilidad` 
+ADD CONSTRAINT `id_persona`
+  FOREIGN KEY (`id_habilidad`)
+  REFERENCES `miportfolio`.`persona` (`id_persona`)
+
+use miportfolio;
+alter table blanda 
+drop constraint FK_blanda_habilidad
+
+ALTER TABLE `miportfolio`.`blanda` 
+DROP FOREIGN KEY `id_habilidad`;
+ALTER TABLE `miportfolio`.`blanda` 
+DROP PRIMARY KEY;
+;
+ALTER TABLE `miportfolio`.`blanda` 
+ADD CONSTRAINT ``
+  FOREIGN KEY ()
+  REFERENCES `miportfolio`.`habilidad` ();
+
+use miportfolio;
+alter table habilidad 
+drop constraint FK_blanda_habilidad
+
+use miportfolio;
+drop table blanda
+
+use miportfolio;
+alter table habilidad 
+drop constraint FK_dura_habilidad
+
+use miportfolio;
+drop table dura
+
+use miportfolio;
+update dura
+set dura = 'Maquetación web responsive'
+where id_dura = 2
+
+use miportfolio;
+alter table freelance
+add url_logo varchar(100) not null
+
+use miportfolio;
+alter table freelance
+add id_experiencia int not null
+
+use miportfolio;
+alter table freelance
+add id_opinion int not null
+
+use miportfolio;
+alter table freelance
+add fecha varchar(20) not null
+
+use miportfolio;
+alter table empleo
+add url_logo varchar(100) not null
+
+use miportfolio;
+alter table empleo
+add id_experiencia int not null
+
+use miportfolio;
+alter table empleo
+add id_opinion int not null
+
+use miportfolio;
+alter table empleo
+add fecha varchar(20) not null
+
+use miportfolio;
+alter table empleo
+add puesto varchar(200) not null
+
+use miportfolio;
+update empleo
+set fecha = '1999 2006'
+where id_empleo = 3
+
+use miportfolio;
+alter table empleo
+add id_titulo not null
+
+use miportfolio;
+alter table academica
+add id_titulo int not null
+
+use miportfolio;
+alter table academica
+add url_logo varchar(100)
+
+use miportfolio;
+alter table academica
+add fecha varchar(10)
+
+use miportfolio;
+alter table curso
+add id_titulo int not null
+
+use miportfolio;
+alter table curso
+add url_logo varchar(100)
+
+use miportfolio;
+alter table curso
+add fecha varchar(10)
+
+use miportfolio;
+alter table academica
+add id_edicion int not null
+
+use miportfolio;
+alter table curso
+add id_edicion int not null
+
+use miportfolio;
+alter table academica
+add titulo varchar(100)
+
+use miportfolio;
+alter table curso
+add titulo varchar(100)
+
+use miportfolio;
+alter table academica
+drop column academica 
+
+use miportfolio;
+alter table curso
+drop column curso
+
+use miportfolio;
+alter table academica
+add column academica varchar(150)
+
+use miportfolio;
+alter table curso
+add column curso varchar(150)
+
+use miportfolio;
+update curso
+set titulo = 'Curso Arduino'
+where id_curso = 1
+
+use miportfolio;
+update curso
+set titulo = '#YoProgramo'
+where id_curso = 2
+
+use miportfolio;
+alter table proyecto
+add column id_persona int not null
+
+use miportfolio;
+update proyecto
+set proyecto = 'Shopping list'
+where id_proyecto = 1
+
+use miportfolio;
+alter table educacion
+drop constraint FK_academica_educacion
+
+use miportfolio;
+alter table educacion
+drop column id_academica
+
+use miportfolio;
+alter table educacion
+drop constraint FK_curso_educacion
+
+use miportfolio;
+alter table educacion
+drop column id_curso
+
+use miportfolio;
+alter table educacion
+drop constraint FK_edicion_educacion
+
+use miportfolio;
+alter table educacion
+drop column id_edicion
+
+use miportfolio;
+alter table educacion
+drop column titulo
+
+use miportfolio;
+alter table educacion
+drop column fecha
+
+use miportfolio;
+alter table habilidad
+drop column habilidad
+
+use miportfolio;
+alter table habilidad
+drop constraint FK_edicion_habilidad
+
+use miportfolio;
+alter table habilidad
+drop column id_edicion
+
+use miportfolio;
+alter table habilidad
+drop column id_persona
+
+use miportfolio;
+alter table experiencia
+drop constraint FK_edicion_experiencia
+
+use miportfolio;
+alter table experiencia
+drop column id_edicion
+
+use miportfolio;
+alter table experiencia
+drop column edicion
+
+use miportfolio;
+alter table experiencia
+drop column fecha
+
+use miportfolio;
+alter table experiencia
+drop column puesto
+
+use miportfolio;
+alter table experiencia
+drop column empresa
+
+use miportfolio;
+alter table experiencia
+drop column logo
+
+use miportfolio;
+alter table experiencia
+drop column freelance
+
+use miportfolio;
+alter table experiencia
+drop column empleo
+
+use miportfolio;
+alter table persona
+drop column id_experiencia
+
+use miportfolio;
+alter table persona
+drop constraint FK_educacion_persona
+
+use miportfolio;
+alter table persona
+drop constraint FK_experiencia_persona
+
+use miportfolio;
+alter table persona
+drop constraint FK_habilidad_persona
+
+use miportfolio;
+alter table persona
+drop constraint FK_proyecto_persona
+
+use miportfolio;
+alter table persona
+drop constraint FK_edicion_persona
+
+use miportfolio;
+alter table persona
+drop column id_educacion
+
+use miportfolio;
+alter table persona
+drop column id_experiencia
+
+use miportfolio;
+alter table persona
+drop column id_habilidad
+
+use miportfolio;
+alter table persona
+drop column id_proyecto
+
+use miportfolio;
+alter table persona
+drop column id_edicion
+

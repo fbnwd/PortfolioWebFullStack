@@ -1,0 +1,56 @@
+
+Sitio responsivo desarrollado en HTML5, CSS3, Bootstrap5, JavaScript, Angular, Java y Spring boot.
+
+Estructura HTML5, estilos CSS3 y Bootstrap5.
+
+<body>
+
+Como administrador del sitio quiero que la etiqueta <body> contenga las etiquetas <header>, <nav>, <main>, <section>, <article> y <footer> para la semántica de su estructura.
+Como administrador del sitio quiero que la etiqueta <body> utilice la fuente sans-serif Raleway para la familia tipográfica del sitio.
+Como administrador del sitio quiero que la etiqueta <body> tenga un fondo de color #F3F2EE para su diseño.
+
+<header>
+
+Como administrador del sitio quiero que la etiqueta <header> esté situada dentro de un contenedor fluid de 1440px de ancho máximo de pantalla para su diseño responsive.
+Como administrador del sitio quiero que la etiqueta <header> tenga una altura de 80px de pantalla para su diseño responsive.
+Como administrador del sitio quiero que la etiqueta <header> tenga una posición fija para su diseño responsive.
+Como administrador del sitio quiero que la etiqueta <header> tenga un fondo de color #00368E para su diseño.
+
+<navbar>
+
+Como administrador del sitio quiero que la etiqueta <navbar> esté situada dentro de la etiqueta <header> para su diseño responsive.
+Como administrador del sitio quiero que la etiqueta <navbar> contenga los íconos en formato svg de Argentina Programa, Inti y del Ministerio de Desarrollo Productivo situados a la izquierda, y a la derecha, los íconos de las redes sociales: WhatsApp, Facebook, LinkedIn y Gmail. 
+Como administrador del sitio quiero que la etiqueta <navbar> contenga el botón Login que muestre el formulario modal de ingreso para editar los componentes.
+
+<main>
+
+Como administrador del sitio quiero que la etiqueta <main> contenga las distintas secciones que serán los componentes del sitio: acerca de mí, experiencia laboral, formación académica, estudios cursados, habilidades duras y blandas, y proyectos para diseñar el sitio.
+
+Como administrador del sitio quiero que la etiqueta <main> quiero que todos los componentes del sitio tengan el mismo ancho centradas al medio de la pantalla, con distintos tamaños de altura según su contenido, separados entre sí por 30px, fondo de color #fff con bordes redondeados, con un box-shadow de color #000000 con una transparencia de 0.2.
+Como administrador del sitio quiero que la etiqueta <main> quiero que cada una de estas secciones tendrá los íconos de edición y eliminación en formato svg.
+
+<section> acerca de mí
+
+Como administrador del sitio quiero que la <section> acerca de mí contenga la foto de portada en formato jpg, la foto de perfil en formato png, los botones de edición y eliminación en formato svg, el nombre completo, los títulos obtenidos, provincia, país y objetivo profesional.
+
+<section> experiencia laboral
+
+Como administrador del sitio quiero que la <section> experiencia laboral contenga el título, los íconos en formato svg de las empresas, los subtítulos y el año. Las imágenes en formato svg de las capturas de WhatsApp y los links de los audios en formato mp3 de las opiniones de los clientes sobre mi trabajo. Tendrá los íconos de edición y eliminación en formato svg.
+
+<section> formación académica estudios cursados
+
+Como administrador del sitio quiero que la <section> formación académica y estudios cursados contengan los títulos, textos e íconos de cada una de las instituciones, junto con los botones de edición y de eliminación.
+
+<section> habilidades duras y blandas
+
+Como administrador del sitio quiero que la <section> habilidades duras y blandas contengan los títulos, textos y gráficos animados de cada una de las habilidades (duras y blandas).
+
+<section> proyectos
+
+Como administrador del sitio quiero que la <section> proyectos contenga los títulos, textos y gráficos de cada uno de los proyectos.
+
+<footer>
+
+Como administrador del sitio quiero que la etiqueta <footer> tenga el ancho total de pantalla, la altura de 60px y fondo de color #00368E, contendrá el nombre completo y año de publicación del sitio.
+Como administrador del sitio quiero que la etiqueta <footer> tenga un ícono de flecha arriba para permitirle al usuario subir a la etiqueta <header> del sitio. 
+

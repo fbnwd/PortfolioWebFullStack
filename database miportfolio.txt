@@ -1,0 +1,156 @@
+
+create database miportfolio
+
+use miportfolio
+
+create table imagen(
+id_imagen int not null,
+url_imagen varchar(100) not null,
+constraint pk_id_imagen primary key (id_imagen)  
+);
+
+create table audio(
+id_audio int not null,
+url_audio varchar(100) not null,
+constraint pk_id_audio primary key (id_audio)
+);
+
+create table edicion(
+id_edicion int not null,
+url_logoAdd varchar(100) not null,
+url_logoEdit varchar(100) not null,
+url_logoDel varchar(100) not null,
+constraint pk_id_edicion primary key (id_edicion)
+)
+
+create table opinion(
+id_opinion int not null,
+id_imagen int not null,
+id_audio int not null,
+id_edicion int not null,
+constraint pk_id_opinion primary key (id_opinion),
+constraint fk_imagen_opinion foreign key (id_imagen) references imagen (id_imagen),
+constraint fk_audio_opinion foreign key (id_audio) references audio (id_audio),
+constraint fk_edicion_opinion foreign key (id_edicion) references edicion (id_edicion)
+)
+
+create table empleo(
+id_empleo int not null,
+empleo varchar(100) not null,
+url_logo varchar(100) not null,
+id_experiencia int not null,
+id_opinion int not null,
+fecha varchar(20) not null,
+puesto varchar(100) not null,
+constraint pk_id_empleo primary key (id_empleo),
+constraint fk_experiencia_empleo foreign key (id_experiencia) references experiencia (id_experiencia),
+constraint fk_opinion_empleo foreign key (id_opinion) references opinion (id_opinion)
+)
+
+create table freelance(
+id_freelance int not null,
+freelance varchar(100) not null,
+url_logo varchar(100) not null,
+id_experiencia int not null,
+id_opinion int not null,
+fecha varchar(20) not null,
+constraint pk_id_freelance primary key (id_freelance),
+constraint fk_experiencia_freelance foreign key (id_experiencia) references experiencia (id_experiencia),
+constraint fk_opinion_freelance foreign key (id_opinion) references opinion (id_opinion)
+)
+
+create table experiencia(
+id_experiencia int not null,
+id_empleo int not null,
+id_freelance int not null,
+constraint pk_id_experiencia primary key (id_experiencia),
+constraint fk_empleo_experiencia foreign key (id_empleo) references empleo (id_empleo),
+constraint fk_freelance_experiencia foreign key (id_freelance) references freelance (id_freelance)
+)
+
+create table dura(
+id_dura int not null,
+url_imagen varchar(100) not null,
+dura varchar(40) not null,
+constraint pk_id_dura primary key (id_dura)
+)
+
+create table blanda(
+id_blanda int not null,
+url_imagen varchar(100) not null,
+blanda varchar(40) not null,
+constraint pk_id_blanda primary key (id_blanda)
+)
+
+create table habilidad(
+id_habilidad int not null,
+id_dura int not null,
+id_blanda int not null,
+constraint pk_id_habilidad primary key (id_habilidad),
+constraint fk_dura_habilidad foreign key (id_dura) references dura (id_dura),
+constraint fk_blanda_habilidad foreign key (id_blanda) references blanda (id_blanda)
+)
+
+create table titulo(
+id_titulo int not null,
+id_educacion int not null,
+id_academica int not null,
+id_curso int not null,
+constraint pk_id_titulo primary key (id_titulo),
+constraint fk_academica_titulo foreign key (id_academica) references academica (id_academica),
+constraint fk_educacion_titulo foreign key (id_educacion) references educacion (id_educacion),
+constraint fk_curso_titulo foreign key (id_curso) references curso (id_curso)
+)
+
+create table academica(
+id_academica int not null,
+id_titulo int not null,
+url_logo varchar(100) int not null,
+fecha varchar(20) not null,
+id_edicion int not null,
+titulo varchar(100) not null,
+academica varchar(150) not null,
+constraint pk_id_academica primary key (id_academica)
+)
+
+create table curso(
+id_curso int not null,
+id_titulo int not null,
+url_logo varchar(100) int not null,
+fecha varchar(20) not null,
+id_edicion int not null,
+titulo varchar(100) not null,
+curso varchar(50) not null,
+constraint pk_id_curso primary key (id_curso)
+)
+
+create table educacion(
+id_educacion int not null,
+id_titulo int not null,
+constraint pk_id_educacion primary key (id_educacion),
+constraint fk_titulo_educacion foreign key (id_titulo) references titulo (id_titulo)
+)
+
+create table persona(
+id_persona int not null,
+nom_persona varchar(40) not null,
+url_fotoPortada varchar(100) not null,
+url_fotoPerfil varchar(100) not null,
+ciudad varchar(10) not null,
+pais varchar(10) not null,
+objetivo varchar(200) not null,
+constraint pk_id_persona primary key (id_persona)
+)
+
+create table proyecto(
+id_proyecto int not null,
+id_edicion int not null,
+proyecto varchar(20) not null,
+url_logo varchar(100) not null,
+descripcion varchar(300) not null,
+fecha varchar(20) not null,
+id_persona int not null,
+constraint pk_id_proyecto primary key (id_proyecto),
+constraint fk_edicion_proyecto foreign key (id_edicion) references edicion (id_edicion),
+constraint fk_persona_proyecto foreign key (id_persona) references persona (id_persona)
+)

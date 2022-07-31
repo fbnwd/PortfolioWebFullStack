@@ -1,0 +1,113 @@
+
+Der.
+
+Persona
+int id_persona pk
+String varchar(40) nombre
+String varchar(10) apellido
+int edad
+
+
+Domicilio
+int id_domicilio pk
+int id_persona fk
+String varchar(40) calle
+int numeracion
+String varchar(40) barrio
+String varchar(40) ciudad
+String varchar(40) provincia
+String varchar(40) pais
+
+
+Experiencia_laboral
+int id_exp_lab pk
+int id_persona fk
+String varchar() tit
+String varchar() subtit
+
+
+Opinion_cliente
+int id_op_cli pk
+int id_persona fk
+String varchar(20) imagen 
+String varchar(20) audio
+
+
+Formacion_academica
+int id_form_acad pk
+int id_persona fk
+String varchar() tit
+String varchar() subtit
+String varchar(20) imagen 
+
+Estudio_cursado
+int id_est_curs pk
+int id_persona fk
+String varchar() tit
+String varchar() subtit
+String varchar(20) imagen 
+
+
+Habilidad_blanda
+int id_hab_blanda pk
+String varchar(20) imagen 
+
+Habilidad_dura
+int id_hab_dura pk
+String varchar(20) imagen 
+
+
+Proyecto
+int id_proyecto
+String varchar() tit
+String varchar() subtit
+String varchar(20) imagen
+
+
+Usuario
+int id_usuario pk
+String varchar(40) nombre_usuario
+String varchar(40) nombre
+String varchar(10) apellido
+String char(1) sexo
+String varchar(20) imagen
+String varchar(50) email
+String varchar(8) pass
+
+
+
+[{
+	"id_usuario": "1",
+        "nombre_usuario": "JuanPerez",
+        "nombre": "Juan",
+        "apellido": "Perez",
+        "sexo": "M",
+        "imagen": "img/male.png",
+        "email": "juan@perez.com.ar"
+    },
+    {
+	"id_usuario": "2",
+        "nombre_usuario": "LauraGonzalez",
+        "nombre": "Laura",
+        "apellido": "Gonzalez",
+        "sexo": "F",
+        "imagen": "img/female.png",
+        "email": "laura@gonzalez.com.ar"
+    },
+    {
+	"id_usuario": "3",
+        "nombre_usuario": "VictoriaCarabajal",
+        "nombre": "Victoria",
+        "apellido": "Carabajal",
+        "sexo": "F",
+        "imagen": "img/female.png",
+        "email": "victoria@carabajal.com.ar"
+    }
+]
+
+
+
+
+
+
+

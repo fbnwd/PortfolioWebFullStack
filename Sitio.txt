@@ -1,0 +1,184 @@
+
+Header
+
+Logos Inti * 3 svg
+Logos redes * 4 svg
+Button Logout
+
+Main
+
+Section Acerca de mí
+
+Foto portada jpg
+Foto perfil jpg
+Texto Título
+Ícono agregar svg
+Ícono edición svg
+Ícono eliminar svg
+Texto Titulos
+Texto Provincia
+Texto País
+Texto Objetivo
+
+Section Experiencia laboral
+
+Título Experiencia laboral
+Ícono agregar svg
+Ícono edición svg
+Ícono eliminar svg
+Logo freelance svg
+Título freelance
+Texto freelance
+anio
+
+Imgs opiniones * 8 jpg
+Audios * 8 mp3
+Logo BPHW svg
+Título bphw
+Texto bphw
+anio
+Logo Isada svg
+Título Isada
+Texto Isada
+anio
+Logo BPBV svg
+Título BPBV
+Texto BPBV
+anio
+
+Section Formación académica
+
+Titulo Formación académica
+Ícono agregar svg
+Ícono edición svg
+Ícono eliminar svg
+Logo UTNFRC svg
+Titulo UTNFRC
+Texto curso
+Texto anio
+Logo CNM svg
+Titulo CNM
+Texto curso
+Texto anio
+Logo IP svg
+Titulo IP
+Texto curso
+Texto anio
+
+Section Estudios cursados
+
+Título Estudios cursados
+Ícono agregar svg
+Ícono edición svg
+Ícono eliminar svg
+Logo UTNFRT svg
+Título UTNFRT
+Texto curso
+Texto anio
+Logo AP svg
+Título AP
+Texto curso
+Texto anio
+Logo CST svg
+Título CST
+Texto curso
+Texto anio
+Logo DH svg
+Título DH
+Texto curso
+Texto anio
+Logo UPM svg
+Título UPM
+Texto curso
+Texto anio
+Logo UTNFRC 111000 svg
+Título UTNFRC 111000
+Texto curso
+Texto anio
+Logo CEM English svg
+Título CEM English
+Texto curso
+Texto anio
+Logo Codesis svg
+Título Codesis
+Texto curso
+Texto anio
+Logo LTM svg
+Título LTM
+Texto curso
+Texto anio
+Logo SDA svg
+Título SDA
+Texto curso
+Texto anio
+
+Section Habilidades duras
+
+Título Habilidades duras
+Ícono agregar svg
+Ícono edición svg
+Ícono eliminar svg
+Img gráfico png
+Título DG
+Img maq web png
+Título maq web
+Img idiomas png
+Título idiomas
+
+Section Habilidades blandas
+
+Título Habilidades blandas
+Ícono agregar svg
+Ícono edición svg
+Ícono eliminar svg
+Img creatividad png
+Título creatividad
+Img responsabilidad png
+Título responsabilidad
+Img resolución_problemas png
+Título resolución_problemas
+
+Section Proyectos
+
+Título Proyectos
+Ícono agregar svg
+Ícono edición svg
+Ícono eliminar svg
+
+Logo proyecto1  svg
+
+Título proyecto1
+Descripcion proyecto1
+Texto Descripcion proyecto1
+Texto proyecto1
+Fecha proyecto1
+Texto Fecha proyecto1
+
+Logo proyecto2 svg
+
+Título proyecto2
+Descripcion proyecto2
+Texto Descripcion proyecto2
+Texto proyecto2
+Fecha proyecto2
+Texto Fecha proyecto2
+
+Logo proyecto3 svg
+
+Título proyecto3
+Descripcion proyecto3
+Texto Descripcion proyecto3
+Texto proyecto3
+Fecha proyecto3
+Texto Fecha proyecto3
+
+footer
+
+Ancho, altura y fondo color
+Texto footer
+
+Img Flecha_arriba png
+
+
+
+

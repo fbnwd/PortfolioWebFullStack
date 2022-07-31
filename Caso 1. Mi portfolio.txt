@@ -1,0 +1,84 @@
+
+Caso Mi portfolio.
+
+Creación de una aplicación SPA para el desarrollo de mi portfolio personal, realizado en arquitectura distribuída bajo el patrón de software MVC, que utiliza MySql como motor de gestión de datos. 
+Para su desarrollo front end utiliza HTML5, CSS3, Bootstrap 5, JavaScript y su framework Angular12, y Java y su framework Spring boot, para su desarrollo back end.
+
+El sitio contiene distintas secciones: Acerca de mí, Experiencia laboral, Educación, Habilidades y Proyectos.
+
+Cada sección permite la realización del alta, edición y eliminación de datos, tarea a cargo del Administrador del sitio, quien es el responsable del inicio y cierre de sesión de usuario según la recuperación de su contraseña.
+
+De acuerdo al contenido de cada sección, pueden utilizar distintos estilos y tamaños de textos para títulos, subtítulos y párrafos, logotipos en formatos de imagen .svg y .png, imágenes fotográficas en formato .jpg, animaciones hechas en JavaScript y transiciones hechas en CSS3 para optimizar su presentación.
+
+Objetivo: Brindar información para la administración de las distintas secciones del sitio.
+
+Límite: Desde la agregación de datos hasta su eliminación.
+
+Alcance.
+
+• Gestion acerca_de_mi.
+- Registrar Foto portada.
+- Modificar Foto portada.
+- Eliminar Foto portada.
+- Registrar Foto perfil.
+- Modificar Foto perfil.
+- Registrar Titulos.
+- Modificar Titulos.
+- Actualizar acerca_de_mi (Alta, baja, modificación y consultas).
+
+• Gestion experiencia_laboral.
+- Registrar experiencia_freelance.
+- Modificar experiencia_freelance.
+- Registrar experiencia_empleado.
+- Modificar experiencia_empleado.
+- Actualizar experiencia_freelance (Alta, baja, modificación y consultas).
+- Actualizar experiencia_empleado (Alta, baja, modificación y consultas).
+
+• Gestion educacion
+- Registrar formacion_academica.
+- Modificar formacion_academica.
+- Actualizar formacion_academica (Alta, baja, modificación y consultas).
+- Registrar estudios_cursados.
+- Modificar estudios_cursados.
+- Actualizar estudios_cursados (Alta, baja, modificación y consultas).
+
+• Gestion habilidades
+- Registrar habilidades_duras.
+- Modificar habilidades_duras.
+- Actualizar habilidades_duras (Alta, baja, modificación y consultas).
+- Registrar habilidades_blandas.
+- Modificar habilidades_blandas.
+- Actualizar habilidades_blandas (Alta, baja, modificación y consultas).
+
+• Gestion proyectos.
+- Registrar proyectos.
+- Modificar proyectos.
+- Actualizar proyectos (Alta, baja, modificación y consultas).
+
+Product owner: Ing. Yael Pinco
+
+Scrum master: Fabián López
+
+Actor Administrador: 
+
+- Iniciar sesión.
+- Cerrar sesión.
+- Recuperar contraseña.
+- Actualizar acerca_de_mi.
+- Actualizar experiencia_laboral.
+- Actualizar educacion.
+- Actualizar habilidades.
+- Actualizar proyectos.
+
+Casos de uso				Objetivo
+
+1.- Iniciar sesión.			Ingresar a la sesión correspondiente.
+2.- Cerrar sesión.			Cerrar la sesión correspondiente.
+3.- Recuperar contraseña.		Reestablecer la contraseña de la sesión correspondiente.
+4.- Actualizar acerca_de_mi.		Dar de alta, baja, modificar o consultar los datos de la sección correspondiente.
+5.- Actualizar experiencia_laboral.	Dar de alta, baja, modificar o consultar los datos de la sección correspondiente.
+6.- Actualizar educacion.		Dar de alta, baja, modificar o consultar los datos de la sección correspondiente.
+7.- Actualizar habilidades.		Dar de alta, baja, modificar o consultar los datos de la sección correspondiente.
+8.- Actualizar proyectos.		Dar de alta, baja, modificar o consultar los datos de la sección correspondiente.
+
+
